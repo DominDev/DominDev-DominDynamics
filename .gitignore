@@ -99,6 +99,7 @@ _docs/
 .claude/
 .gemini/
 .codex/
+.agents/
 .claude*/
 .gemini*/
 .codex*/
