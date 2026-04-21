@@ -9,20 +9,36 @@ import { contactInfo, footerContent, navItems } from "../../data/content";
 import logoWhite from "../../assets/icons/logo-white.png";
 import { GithubIcon, MailIcon, ArrowRightIcon } from "../ui/Icons";
 
-function DockLink({ href, children, onClick }) {
+const trackedNavItems = [...navItems, { label: "Kontakt", href: "#contact" }];
+
+function DockLink({ href, children, onClick, isActive = false }) {
   return (
     <a
       href={href}
       onClick={onClick}
-      className="muted-link flex min-h-[44px] items-center rounded-full px-4 text-sm transition hover:bg-white/5 focus-visible:bg-white/5 lg:min-h-[50px] lg:px-5 lg:text-base"
+      className="relative flex min-h-[44px] items-center rounded-full px-4 text-sm lg:min-h-[50px] lg:px-5 lg:text-base"
     >
-      {children}
+      {isActive ? (
+        <motion.span
+          layoutId="desktop-active-pill"
+          transition={{ type: "spring", stiffness: 420, damping: 34, mass: 0.7 }}
+          className="absolute inset-0 rounded-full border border-white/10 bg-white/[0.06]"
+        />
+      ) : null}
+      <span
+        className={`relative z-10 transition ${
+          isActive ? "text-white" : "muted-link hover:text-white focus-visible:text-white"
+        }`}
+      >
+        {children}
+      </span>
     </a>
   );
 }
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState("");
 
   // Blokowanie scrolla przy otwartym menu
   useEffect(() => {
@@ -32,6 +48,90 @@ export function Header() {
       document.body.style.overflow = "unset";
     }
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const sections = trackedNavItems
+      .map((item) => {
+        const section = document.querySelector(item.href);
+        return section instanceof HTMLElement ? { href: item.href, element: section } : null;
+      })
+      .filter(Boolean);
+
+    if (!sections.length) return;
+
+    const visibilityMap = new Map();
+
+    const resolveActiveSection = () => {
+      const firstSectionTop = sections[0].element.offsetTop;
+      if (window.scrollY < firstSectionTop - 180) {
+        setActiveHref("");
+        return;
+      }
+
+      const viewportAnchor = window.innerHeight * 0.42;
+      const sectionsWithMetrics = sections.map(({ href, element }) => {
+        const rect = element.getBoundingClientRect();
+        return {
+          href,
+          top: rect.top,
+          bottom: rect.bottom,
+          containsAnchor: rect.top <= viewportAnchor && rect.bottom >= viewportAnchor,
+          ratio: visibilityMap.get(href) ?? 0,
+          distance: Math.abs(rect.top - viewportAnchor),
+        };
+      });
+
+      const containingSection = sectionsWithMetrics.find((section) => section.containsAnchor);
+      if (containingSection) {
+        setActiveHref(containingSection.href);
+        return;
+      }
+
+      const highestVisibleSection = [...sectionsWithMetrics]
+        .filter((section) => section.ratio > 0)
+        .sort((a, b) => {
+          if (b.ratio !== a.ratio) return b.ratio - a.ratio;
+          return a.distance - b.distance;
+        })[0];
+
+      if (highestVisibleSection) {
+        setActiveHref(highestVisibleSection.href);
+        return;
+      }
+
+      const fallbackSection = [...sectionsWithMetrics]
+        .reverse()
+        .find((section) => section.top <= viewportAnchor);
+
+      setActiveHref(fallbackSection?.href ?? "");
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          visibilityMap.set(`#${entry.target.id}`, entry.intersectionRatio);
+        });
+        resolveActiveSection();
+      },
+      {
+        rootMargin: "-18% 0px -42% 0px",
+        threshold: [0, 0.12, 0.24, 0.4, 0.56, 0.72, 0.88, 1],
+      }
+    );
+
+    sections.forEach(({ element }) => observer.observe(element));
+    window.addEventListener("scroll", resolveActiveSection, { passive: true });
+    window.addEventListener("resize", resolveActiveSection);
+    resolveActiveSection();
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", resolveActiveSection);
+      window.removeEventListener("resize", resolveActiveSection);
+    };
+  }, []);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -56,7 +156,7 @@ export function Header() {
           {/* Desktop Nav */}
           <nav className="hidden items-center gap-1 sm:flex">
             {navItems.map((item) => (
-              <DockLink key={item.href} href={item.href}>
+              <DockLink key={item.href} href={item.href} isActive={activeHref === item.href}>
                 {item.label}
               </DockLink>
             ))}
@@ -116,9 +216,13 @@ export function Header() {
                   href={item.href}
                   onClick={closeMenu}
                   initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: idx * 0.05 }}
-                  className="text-3xl font-semibold tracking-tight text-white transition hover:text-zinc-300 focus-visible:text-zinc-300"
+                  animate={{ opacity: 1, x: activeHref === item.href ? 16 : 0 }}
+                  transition={{
+                    delay: idx * 0.05,
+                    x: { type: "spring", stiffness: 320, damping: 28, mass: 0.7 },
+                    opacity: { duration: 0.2 },
+                  }}
+                  className="text-3xl font-semibold tracking-tight text-white"
                 >
                   {item.label}
                 </motion.a>
@@ -127,9 +231,15 @@ export function Header() {
                 href="#contact"
                 onClick={closeMenu}
                 initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: navItems.length * 0.05 }}
-                className="mt-4 text-3xl font-semibold tracking-tight text-white/60 transition hover:text-white focus-visible:text-white"
+                animate={{ opacity: 1, x: activeHref === "#contact" ? 16 : 0 }}
+                transition={{
+                  delay: navItems.length * 0.05,
+                  x: { type: "spring", stiffness: 320, damping: 28, mass: 0.7 },
+                  opacity: { duration: 0.2 },
+                }}
+                className={`mt-4 text-3xl font-semibold tracking-tight transition-colors ${
+                  activeHref === "#contact" ? "text-white" : "text-white/60 hover:text-white focus-visible:text-white"
+                }`}
               >
                 Kontakt
               </motion.a>
