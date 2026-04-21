@@ -73,7 +73,7 @@ export function About() {
                     {aboutSection.highlights.map((item) => (
                       <div
                         key={item.title}
-                        className="rounded-[20px] border border-white/10 bg-white/[0.03] px-4 py-4"
+                        className="origin-bottom-left transform-gpu rounded-[20px] border border-white/10 bg-white/[0.03] px-4 py-4 transition-[transform,border-color,box-shadow,background-color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-white/18 hover:bg-white/[0.045] hover:shadow-[0_24px_50px_-28px_rgba(255,255,255,0.14)] hover:[transform:perspective(1200px)_rotateX(5deg)_rotateY(-9deg)_translateY(-4px)] motion-reduce:hover:[transform:none]"
                       >
                         <div className="text-base font-semibold text-white">{item.title}</div>
                         <div className="muted-copy mt-2 text-sm leading-6">{item.text}</div>
