@@ -1,7 +1,6 @@
 /**
  * data/content.js
- * Centralny magazyn treści strony. 
- * Pozwala na łatwą edycję tekstów bez dotykania struktury komponentów.
+ * Centralized site content for easier edits without touching component structure.
  */
 
 export const navItems = [
@@ -11,14 +10,20 @@ export const navItems = [
   { label: "Realizacje", href: "#work" },
 ];
 
-export const heroRotatingWords = [
-  "interfejsy webowe",
-  "landing page",
-  "aplikacje webowe",
-  "frontend UI",
-  "produkty cyfrowe",
-  "doświadczenia UX",
-];
+export const heroContent = {
+  badge: "Otwarty na współpracę",
+  titleLead: "Projektuję i wdrażam",
+  rotatingWords: [
+    "interfejsy webowe",
+    "landing page'e",
+    "aplikacje webowe",
+    "doświadczenia UX",
+  ],
+  description:
+    "Landing page'e i nowoczesne interfejsy nastawione na czytelność, szybkość oraz dobre doświadczenie użytkownika.",
+  primaryCta: "Zobacz realizacje",
+  secondaryCta: "GitHub",
+};
 
 export const principles = [
   {
@@ -134,5 +139,5 @@ export const contactInfo = {
     { label: "GitHub", href: "https://github.com/", icon: "external" },
     { label: "LinkedIn", href: "#", icon: "external" },
     { label: "CV (PDF)", href: "#", icon: "external" },
-  ]
+  ],
 };
