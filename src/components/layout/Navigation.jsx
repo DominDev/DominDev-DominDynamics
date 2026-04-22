@@ -39,6 +39,10 @@ function DockLink({ href, children, onClick, isActive = false }) {
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeHref, setActiveHref] = useState("");
+  const dotPatternPill = {
+    backgroundImage: "radial-gradient(circle, #000 1.2px, transparent 1.2px)",
+    backgroundSize: "10px 10px",
+  };
 
   // Blokowanie scrolla przy otwartym menu
   useEffect(() => {
@@ -189,23 +193,46 @@ export function Header() {
             <button
               onClick={toggleMenu}
               aria-label={isMenuOpen ? "Zamknij menu" : "Otwórz menu"}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:bg-white/10 focus-visible:border-white/40 focus-visible:bg-white/10 sm:hidden"
+              className="relative z-50 flex flex-none items-center justify-center overflow-hidden rounded-full bg-white text-black shadow-[0_0_30px_rgba(255,255,255,0.05)] transition-all duration-300 ease-in-out hover:scale-105 active:scale-95 sm:hidden"
+              style={{ width: "3.5rem", height: "2.25rem" }}
             >
-              <div className="relative h-4 w-5">
+              <div
+                aria-hidden="true"
+                className="pointer-events-none absolute top-0 right-0 h-full w-1/2 opacity-[0.12]"
+                style={dotPatternPill}
+              />
+              <div className="relative z-10" style={{ width: "1.35rem", height: "0.9rem" }}>
                 <span
-                  className={`absolute left-0 block h-0.5 w-full bg-current transition-all duration-300 ${
-                    isMenuOpen ? "top-2 rotate-45" : "top-0"
-                  }`}
+                  className="absolute left-0 block w-full rounded-full bg-black transition-all duration-300 ease-in-out"
+                  style={{
+                    height: "3px",
+                    top: isMenuOpen ? "5.5px" : "0px",
+                    transform: isMenuOpen
+                      ? "translateX(0) rotate(38deg)"
+                      : "translateX(0) rotate(0deg)",
+                    transformOrigin: "center center",
+                  }}
                 />
                 <span
-                  className={`absolute left-0 top-2 block h-0.5 w-full bg-current transition-opacity duration-300 ${
-                    isMenuOpen ? "opacity-0" : "opacity-100"
-                  }`}
+                  className="absolute left-0 block w-full rounded-full bg-black transition-all duration-300 ease-in-out"
+                  style={{
+                    height: "3px",
+                    top: "5.5px",
+                    opacity: isMenuOpen ? 0 : 1,
+                    transform: isMenuOpen ? "scaleX(0.2)" : "scaleX(1)",
+                    transformOrigin: "center center",
+                  }}
                 />
                 <span
-                  className={`absolute left-0 block h-0.5 w-full bg-current transition-all duration-300 ${
-                    isMenuOpen ? "top-2 -rotate-45" : "top-4"
-                  }`}
+                  className="absolute left-0 block w-full rounded-full bg-black transition-all duration-300 ease-in-out"
+                  style={{
+                    height: "3px",
+                    top: isMenuOpen ? "5.5px" : "11px",
+                    transform: isMenuOpen
+                      ? "translateX(0) rotate(-38deg)"
+                      : "translateX(0) rotate(0deg)",
+                    transformOrigin: "center center",
+                  }}
                 />
               </div>
             </button>
