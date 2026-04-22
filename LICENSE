@@ -29,9 +29,10 @@ in this repository are **All Rights Reserved** and may not be used, copied,
 modified, or distributed without explicit written permission from DominDev / DominDynamics.
 
 This includes but is not limited to:
+
 - `/src/assets/` directory and all subdirectories
 - `/public/` directory (excluding manifest/robots/sitemap)
 - Brand assets, logos, and trademarks
 - Written content (copy, descriptions, blog posts) in `src/data/content.js`
 
-For licensing inquiries, contact: contact@domindynamics.com
+For licensing inquiries, contact: contact@domindev.com

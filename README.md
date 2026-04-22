@@ -393,8 +393,8 @@ See [LICENSE](LICENSE) for full legal terms.
 
 ### **Building digital experiences that convert.**
 
-[![Website](https://img.shields.io/badge/🌐_Website-domindynamics.com-FF1F1F?style=for-the-badge)](https://domindynamics.com/)
-[![Email](https://img.shields.io/badge/✉️_Email-contact@domindynamics.com-EA4335?style=for-the-badge)](mailto:contact@domindynamics.com)
+[![Website](https://img.shields.io/badge/🌐_Website-domindev.com-FF1F1F?style=for-the-badge)](https://domindev.com/)
+[![Email](https://img.shields.io/badge/✉️_Email-contact@domindev.com-EA4335?style=for-the-badge)](mailto:contact@domindev.com)
 [![GitHub](https://img.shields.io/badge/⭐_GitHub-DominDev-181717?style=for-the-badge)](https://github.com/DominDev)
 
 ---
