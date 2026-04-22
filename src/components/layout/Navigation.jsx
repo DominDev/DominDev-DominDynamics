@@ -43,6 +43,10 @@ export function Header() {
     backgroundImage: "radial-gradient(circle, #000 1.2px, transparent 1.2px)",
     backgroundSize: "10px 10px",
   };
+  const dotPatternSoftPill = {
+    backgroundImage: "radial-gradient(circle, rgba(255,255,255,0.7) 1px, transparent 1px)",
+    backgroundSize: "10px 10px",
+  };
 
   // Blokowanie scrolla przy otwartym menu
   useEffect(() => {
@@ -291,62 +295,71 @@ export function Header() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
-              className="mt-12 flex flex-col gap-6"
+              className="mt-auto flex flex-col items-center gap-6 pt-10"
             >
               <div className="h-px w-full bg-white/10" />
 
-              <div className="grid grid-cols-1 gap-3">
+              <div className="flex flex-wrap items-center justify-center gap-3">
                 <a
                   href={`mailto:${contactInfo.email}`}
-                  className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/5 p-4 text-white transition hover:bg-white/10 focus-visible:border-white/35 focus-visible:bg-white/10"
+                  aria-label="Napisz wiadomość"
+                  className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/12 bg-white/[0.2] text-white shadow-[0_0_30px_rgba(255,255,255,0.05)] transition hover:-translate-y-0.5 hover:border-white/18 hover:bg-white/[0.24] focus-visible:scale-[1.02]"
+                  style={{ width: "3.8rem", height: "2.4rem" }}
                 >
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-black">
-                    <MailIcon className="h-5 w-5" />
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="muted-label text-[10px] uppercase tracking-wider">
-                      Napisz wiadomość
-                    </span>
-                    <span className="font-medium">{contactInfo.email}</span>
-                  </div>
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute top-0 right-0 h-full w-1/2 opacity-[0.14]"
+                    style={dotPatternSoftPill}
+                  />
+                  <MailIcon className="relative z-10 h-[18px] w-[18px]" />
                 </a>
-
-                <div className="grid grid-cols-2 gap-3">
-                  <a
-                    href={
-                      contactInfo.socials.find((s) => s.label === "GitHub")
-                        ?.href
-                    }
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-white transition hover:bg-white/10 focus-visible:border-white/35 focus-visible:bg-white/10"
+                <a
+                  href={
+                    contactInfo.socials.find((s) => s.label === "GitHub")
+                      ?.href
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/12 bg-white/[0.2] text-white shadow-[0_0_30px_rgba(255,255,255,0.05)] transition hover:-translate-y-0.5 hover:border-white/18 hover:bg-white/[0.24] focus-visible:scale-[1.02]"
+                  style={{ width: "3.8rem", height: "2.4rem" }}
+                >
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute top-0 right-0 h-full w-1/2 opacity-[0.14]"
+                    style={dotPatternSoftPill}
+                  />
+                  <GithubIcon className="relative z-10 h-[18px] w-[18px]" />
+                </a>
+                <a
+                  href={
+                    contactInfo.socials.find((s) => s.label === "LinkedIn")
+                      ?.href
+                  }
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="relative inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/12 bg-white/[0.2] text-white shadow-[0_0_30px_rgba(255,255,255,0.05)] transition hover:-translate-y-0.5 hover:border-white/18 hover:bg-white/[0.24] focus-visible:scale-[1.02]"
+                  style={{ width: "3.8rem", height: "2.4rem" }}
+                >
+                  <span
+                    aria-hidden="true"
+                    className="pointer-events-none absolute top-0 right-0 h-full w-1/2 opacity-[0.14]"
+                    style={dotPatternSoftPill}
+                  />
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="relative z-10 h-[18px] w-[18px]"
+                    aria-hidden="true"
                   >
-                    <GithubIcon className="h-5 w-5" />
-                    <span className="font-medium">GitHub</span>
-                  </a>
-                  <a
-                    href={
-                      contactInfo.socials.find((s) => s.label === "LinkedIn")
-                        ?.href
-                    }
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 p-4 text-white transition hover:bg-white/10 focus-visible:border-white/35 focus-visible:bg-white/10"
-                  >
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="h-5 w-5"
-                    >
-                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
-                    </svg>
-                    <span className="font-medium">LinkedIn</span>
-                  </a>
-                </div>
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                  </svg>
+                </a>
               </div>
             </motion.div>
 
-            <div className="mt-auto pb-10">
+            <div className="pb-10 pt-4 text-center">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-600">
                 {footerContent.mobileTagline}
               </p>

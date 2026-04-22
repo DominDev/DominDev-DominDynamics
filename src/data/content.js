@@ -179,6 +179,6 @@ export const contactInfo = {
 
 export const footerContent = {
   signature: "Damian Dominiak",
-  tagline: "© 2026 · Portfolio / Frontend / UI",
-  mobileTagline: "Damian Dominiak · Frontend / UI",
+  tagline: "© 2026 · Strony · Interfejsy · Frontend",
+  mobileTagline: "Strony · Interfejsy · Frontend",
 };
