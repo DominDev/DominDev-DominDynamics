@@ -6,7 +6,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { aboutSection, approachSection, principles } from "../../data/content";
-import personImage from "../../assets/images/person-damian-mono.png";
+import personImage from "../../assets/images/person-damian-mono-v2.png";
 import { PrimaryButton, GhostButton } from "../ui/Button";
 import { ArrowRightIcon } from "../ui/Icons";
 import { MeshBackground } from "../effects/Backgrounds";
