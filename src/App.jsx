@@ -4,8 +4,10 @@
  * Składa modularne sekcje w spójną całość i zarządza globalnymi stanami (kursor).
  */
 
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import { Header, Footer } from "./components/layout/Navigation";
+import { Preloader } from "./components/layout/Preloader";
 import { Hero } from "./components/sections/Hero";
 import { About, Approach } from "./components/sections/AboutApproach";
 import { Architecture, Work, Contact } from "./components/sections/MainSections";
@@ -13,7 +15,24 @@ import { ScrollToTop } from "./components/ui/ScrollToTop";
 import { useCustomCursor } from "./hooks/useCustomCursor";
 
 export default function App() {
+  const [showPreloader, setShowPreloader] = useState(true);
   const { cursorVisible, cursorExpanded, cursorPosition } = useCustomCursor();
+  const handlePreloaderFinish = useCallback(() => {
+    setShowPreloader(false);
+  }, []);
+
+  useEffect(() => {
+    if (typeof document === "undefined") return;
+
+    const previousOverflow = document.body.style.overflow;
+    if (showPreloader) {
+      document.body.style.overflow = "hidden";
+    }
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [showPreloader]);
 
   return (
     <div className="min-h-screen overflow-x-hidden">
@@ -21,7 +40,7 @@ export default function App() {
       <div
         aria-hidden="true"
         className={`pointer-events-none fixed z-[9999] hidden h-5 w-5 rounded-full bg-white mix-blend-difference transition-[opacity,transform] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] [@media(pointer:fine)]:block ${
-          cursorVisible ? "opacity-100" : "opacity-0"
+          cursorVisible && !showPreloader ? "opacity-100" : "opacity-0"
         }`}
         style={{
           left: cursorPosition.x,
@@ -54,6 +73,10 @@ export default function App() {
 
       <Footer />
       <ScrollToTop />
+
+      <AnimatePresence>
+        {showPreloader ? <Preloader onFinish={handlePreloaderFinish} /> : null}
+      </AnimatePresence>
     </div>
   );
 }
