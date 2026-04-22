@@ -14,11 +14,11 @@
 
 ### 🎯 Quick Stats
 
-| Metric | Value | Benchmark |
-|--------|-------|-----------|
-| **Performance** | 🟢 98+ | Industry avg: 70 |
-| **Load Time** | ⚡ < 0.8s | Industry avg: 3-5s |
-| **Lighthouse** | 🟢 100/100 | Industry avg: 75 |
+| Metric            | Value          | Benchmark            |
+| ----------------- | -------------- | -------------------- |
+| **Performance**   | 🟢 98+         | Industry avg: 70     |
+| **Load Time**     | ⚡ < 0.8s      | Industry avg: 3-5s   |
+| **Lighthouse**    | 🟢 100/100     | Industry avg: 75     |
 | **Accessibility** | 🟢 WCAG 2.2 AA | Standard requirement |
 
 ### 2. Visual Preview
@@ -33,14 +33,14 @@
 <tr>
 <td width="50%">
 
-**Desktop** 🖥️
-![Desktop](public/og-image.png)
+**Desktop**
+![Desktop](public/overview-desktop.png)
 
 </td>
-<td width="50%">
+<td width="2.1%">
 
-**Mobile** 📱
-![Mobile](public/app-icon-512.png)
+**Mobile**
+![Mobile](public/overview-mobile.png)
 
 </td>
 </tr>
@@ -62,13 +62,13 @@ DominDynamics is not just another portfolio. It is a carefully crafted showcase 
 
 <div align="center">
 
-| Feature | Description | Impact |
-|---------|-------------|--------|
-| 🎯 **Modern UI** | Custom-built, aesthetic layouts | 🚀 High Engagement |
-| ⚡ **Performance** | Sub-second load times & smooth 60fps | ⚡ 0.8s LCP |
-| 📱 **Responsive** | Mobile-first architecture | 📈 100% Device Support |
-| ♿ **Accessibility** | WCAG 2.2 AA compliant | ✅ Inclusive UX |
-| 🔒 **Clean Code** | Zero technical debt, scalable structure | 🛡️ Maintainable |
+| Feature              | Description                             | Impact                 |
+| -------------------- | --------------------------------------- | ---------------------- |
+| 🎯 **Modern UI**     | Custom-built, aesthetic layouts         | 🚀 High Engagement     |
+| ⚡ **Performance**   | Sub-second load times & smooth 60fps    | ⚡ 0.8s LCP            |
+| 📱 **Responsive**    | Mobile-first architecture               | 📈 100% Device Support |
+| ♿ **Accessibility** | WCAG 2.2 AA compliant                   | ✅ Inclusive UX        |
+| 🔒 **Clean Code**    | Zero technical debt, scalable structure | 🛡️ Maintainable        |
 
 </div>
 
@@ -81,6 +81,7 @@ DominDynamics is not just another portfolio. It is a carefully crafted showcase 
 <td width="50%">
 
 #### ❌ **Typical Projects**
+
 - Bloated frameworks
 - Slow load times (3-5s)
 - Generic templates
@@ -91,6 +92,7 @@ DominDynamics is not just another portfolio. It is a carefully crafted showcase 
 <td width="50%">
 
 #### ✅ **This Project**
+
 - **Modern React 19** - minimal overhead
 - **< 0.8s load time** - optimized for CWV
 - **Custom Design** - unique & purposeful
@@ -108,11 +110,13 @@ DominDynamics is not just another portfolio. It is a carefully crafted showcase 
 <div align="center">
 
 ### Frontend
+
 ![React 19](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
 ### Build & Optimization
+
 ![Vite 6](https://img.shields.io/badge/Vite_6-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Sharp](https://img.shields.io/badge/Sharp-Image_Optimization-99CC00?style=for-the-badge)
 ![Terser](https://img.shields.io/badge/Terser-Minification-8DD6F9?style=for-the-badge)
@@ -123,18 +127,19 @@ DominDynamics is not just another portfolio. It is a carefully crafted showcase 
 
 ### 📊 Stack Comparison
 
-| Category | This Project | Typical Alternative | Why Better? |
-|----------|--------------|---------------------|-------------|
-| **Framework** | React 19 (Optimized) | React 18 + heavy deps | Faster hydration, better perf |
-| **Styling** | Tailwind CSS | Heavy UI Libraries | Zero unused CSS, faster TTI |
-| **Images** | WebP/AVIF (Automated) | PNG/JPG (Manual) | 70% smaller assets |
-| **Build** | Vite 6 | Webpack | 10x faster HMR & builds |
+| Category      | This Project          | Typical Alternative   | Why Better?                   |
+| ------------- | --------------------- | --------------------- | ----------------------------- |
+| **Framework** | React 19 (Optimized)  | React 18 + heavy deps | Faster hydration, better perf |
+| **Styling**   | Tailwind CSS          | Heavy UI Libraries    | Zero unused CSS, faster TTI   |
+| **Images**    | WebP/AVIF (Automated) | PNG/JPG (Manual)      | 70% smaller assets            |
+| **Build**     | Vite 6                | Webpack               | 10x faster HMR & builds       |
 
 ### Why This Stack?
 
 > 💡 **Philosophy:** Performance is a feature, not a finishing touch.
 
 This project prioritizes **Core Web Vitals and user experience**:
+
 - **React 19** - Leveraging the latest concurrent features for fluid UI.
 - **Tailwind CSS** - Utility-first approach for minimal CSS bundle and rapid iteration.
 - **Framer Motion** - Production-ready animations that respect `prefers-reduced-motion`.
@@ -148,12 +153,12 @@ This project prioritizes **Core Web Vitals and user experience**:
 
 <div align="center">
 
-| Category | Score | Industry Avg | Improvement |
-|----------|-------|--------------|-------------|
-| 🎯 Performance | 🟢 **100/100** | 70 | +43% |
-| ♿ Accessibility | 🟢 **100/100** | 80 | +25% |
-| 🔍 Best Practices | 🟢 **100/100** | 85 | +18% |
-| 📱 SEO | 🟢 **100/100** | 75 | +33% |
+| Category          | Score          | Industry Avg | Improvement |
+| ----------------- | -------------- | ------------ | ----------- |
+| 🎯 Performance    | 🟢 **100/100** | 70           | +43%        |
+| ♿ Accessibility  | 🟢 **100/100** | 80           | +25%        |
+| 🔍 Best Practices | 🟢 **100/100** | 85           | +18%        |
+| 📱 SEO            | 🟢 **100/100** | 75           | +33%        |
 
 </div>
 
@@ -188,6 +193,7 @@ This project prioritizes **Core Web Vitals and user experience**:
 <td width="33%">
 
 #### 📦 Code
+
 - ✅ React 19 Server-ready
 - ✅ Tree-shaking (Vite)
 - ✅ Code splitting
@@ -198,6 +204,7 @@ This project prioritizes **Core Web Vitals and user experience**:
 <td width="33%">
 
 #### 🖼️ Assets
+
 - ✅ WebP/AVIF via Sharp
 - ✅ Lazy-loaded images
 - ✅ Responsive `srcset`
@@ -208,6 +215,7 @@ This project prioritizes **Core Web Vitals and user experience**:
 <td width="33%">
 
 #### 🚀 Delivery
+
 - ✅ Gzip/Brotli support
 - ✅ Cache-control headers
 - ✅ Modern ESM delivery
@@ -226,12 +234,12 @@ This project prioritizes **Core Web Vitals and user experience**:
 
 ### 🏆 WCAG 2.2 Level AA Compliant
 
-| Standard | Status | Details |
-|----------|--------|---------|
-| **Perceivable** | ✅ | High contrast (4.5:1+), proper alt text |
-| **Operable** | ✅ | Full keyboard navigation, no keyboard traps |
-| **Understandable** | ✅ | Predictable layouts, clear error states |
-| **Robust** | ✅ | Semantic HTML5, ARIA landmarks |
+| Standard           | Status | Details                                     |
+| ------------------ | ------ | ------------------------------------------- |
+| **Perceivable**    | ✅     | High contrast (4.5:1+), proper alt text     |
+| **Operable**       | ✅     | Full keyboard navigation, no keyboard traps |
+| **Understandable** | ✅     | Predictable layouts, clear error states     |
+| **Robust**         | ✅     | Semantic HTML5, ARIA landmarks              |
 
 </div>
 
@@ -328,10 +336,10 @@ DominDynamics/
 
 ### 🌐 Recommended Hosting
 
-| Platform | Best For | Status |
-|----------|----------|--------|
-| **Vercel** | React / Vite projects | ✅ Verified |
-| **Netlify** | Static sites | ✅ Verified |
+| Platform         | Best For                 | Status      |
+| ---------------- | ------------------------ | ----------- |
+| **Vercel**       | React / Vite projects    | ✅ Verified |
+| **Netlify**      | Static sites             | ✅ Verified |
 | **GitHub Pages** | Open source static sites | ✅ Verified |
 
 ### 🚀 Build for Production
@@ -354,12 +362,12 @@ npm run preview
 
 <div align="center">
 
-| Priority | Feature | Status | Timeline |
-|----------|---------|--------|----------|
-| 🔴 High | Full i18n support (EN/PL) | 📋 Planned | Q2 2026 |
-| 🔴 High | Dark/Light mode toggle | 📋 Planned | Q2 2026 |
-| 🟡 Medium | Case Study detailed pages | 💭 Considering | Q3 2026 |
-| 🟡 Medium | Blog / Insights section | 💭 Considering | Q4 2026 |
+| Priority  | Feature                   | Status         | Timeline |
+| --------- | ------------------------- | -------------- | -------- |
+| 🔴 High   | Full i18n support (EN/PL) | 📋 Planned     | Q2 2026  |
+| 🔴 High   | Dark/Light mode toggle    | 📋 Planned     | Q2 2026  |
+| 🟡 Medium | Case Study detailed pages | 💭 Considering | Q3 2026  |
+| 🟡 Medium | Blog / Insights section   | 💭 Considering | Q4 2026  |
 
 </div>
 
@@ -378,10 +386,10 @@ This project uses a **dual license**:
 
 <div align="center">
 
-| Type | What's Covered | Terms |
-|------|----------------|-------|
-| ✅ **MIT License** | Source code in `src/` | Free to use, modify, distribute |
-| ❌ **All Rights Reserved** | Images, content, branding | Permission required |
+| Type                       | What's Covered            | Terms                           |
+| -------------------------- | ------------------------- | ------------------------------- |
+| ✅ **MIT License**         | Source code in `src/`     | Free to use, modify, distribute |
+| ❌ **All Rights Reserved** | Images, content, branding | Permission required             |
 
 </div>
 
