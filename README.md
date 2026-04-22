@@ -29,15 +29,8 @@
 
 ![Desktop Preview](public/og-image.png)
 
-<table>
-<tr>
-<td width="10%">
-
 **Desktop**
 ![Desktop](public/overview-desktop.png)
-
-</tr>
-</table>
 
 </div>
 
