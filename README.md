@@ -31,13 +31,13 @@
 
 <table>
 <tr>
-<td width="50%">
+<td width="25%">
 
 **Desktop**
 ![Desktop](public/overview-desktop.png)
 
 </td>
-<td width="2.1%">
+<td width="2.5%">
 
 **Mobile**
 ![Mobile](public/overview-mobile.png)
