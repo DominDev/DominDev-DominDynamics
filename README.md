@@ -1,10 +1,11 @@
 # DominDynamics
 
-> **Interface. Logic. Product.** - Building digital experiences that convert through technical precision and aesthetic clarity.
+> **Interface. Logic. Product.**  
+> Building digital experiences that feel premium, stay fast, and support real product growth.
 
 <div align="center">
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-success?style=for-the-badge)](https://domindynamics.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Visit-success?style=for-the-badge)](https://domindynamics.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/DominDev/DominDev-DominDynamics)
 [![License](https://img.shields.io/badge/License-Code_MIT_%2B_Assets_ARR-blue?style=for-the-badge)](LICENSE)
 
@@ -12,78 +13,80 @@
 
 ---
 
-### 🎯 Quick Stats
+### Quick Stats
 
-| Metric            | Value          | Benchmark            |
-| ----------------- | -------------- | -------------------- |
-| **Performance**   | 🟢 100/100     | Industry avg: 70     |
-| **Load Time**     | ⚡ < 0.8s      | Industry avg: 3-5s   |
-| **Accessibility** | 🟢 WCAG 2.2 AA | Industry avg: 75     |
-| **Bundle Size**   | 📦 < 45KB      | Industry avg: 200KB+ |
+| Metric            | Value                        | Note                                      |
+| ----------------- | ---------------------------- | ----------------------------------------- |
+| **Performance**   | `99 desktop / 96 mobile`     | Based on real PageSpeed Insights reports  |
+| **LCP**           | `0.5s desktop / 1.8s mobile` | Fast visual delivery on both form factors |
+| **Accessibility** | `95 desktop / 100 mobile`    | Strong Lighthouse accessibility baseline  |
+| **SEO**           | `100 / 100`                  | Technically ready for search visibility   |
 
 ### 2. Visual Preview
 
-## 📸 Preview
+## Preview
 
 <div align="center">
 
 ![Desktop Preview](public/og-image.png)
 
-**Desktop** 🖥️
+**Desktop**
 ![Desktop](public/overview-desktop.png)
 
 </div>
 
-> 💡 **Tip:** See it in action: [Live Demo](https://domindynamics.com)
+> See it live: [domindynamics.com](https://domindynamics.com)
 
 ### 3. About & Business Value
 
-## 💡 About
+## About
 
-DominDynamics is not just another portfolio project. It is a **performance-first digital ecosystem** designed to bridge the gap between aesthetic UI and robust product logic. Built with a focus on scalability and clarity, it serves as a blueprint for modern, high-conversion web applications that remain maintainable as they grow.
+DominDynamics presents a clear point of view on modern product work: visual quality should not come at the cost of structure, speed, or clarity. The project is built to show how interface design, interaction logic, and technical discipline can work together in one cohesive digital experience.
+
+This is not a generic template exercise. It is a focused demonstration of premium presentation, product-minded structure, and implementation quality meant to support real-world client work.
 
 ---
 
-### ✨ Key Features
+### Key Features
 
 <div align="center">
 
-| Feature                   | Description                    | Impact              |
-| ------------------------- | ------------------------------ | ------------------- |
-| 🎯 **Interface Flow**     | Cohesive UI with zero chaos    | 🚀 +35% Engagement  |
-| ⚡ **Performance-First**  | Sub-second load times          | ⚡ Instant TTI      |
-| 📱 **Responsive**         | Mobile-first architecture      | 📈 Better UX        |
-| ♿ **WCAG 2.2 AA**        | Inclusive design by default    | ✅ Universal Access |
-| 🔒 **Clean Architecture** | Zero technical debt from Day 1 | 🛡️ Easy Maintenance |
+| Feature                    | Description                                      | Value                        |
+| -------------------------- | ------------------------------------------------ | ---------------------------- |
+| **Interface Flow**         | Cohesive visual hierarchy with deliberate pacing | Stronger first impression    |
+| **Measured Performance**   | Real PSI results on desktop and mobile           | Fast, credible experience    |
+| **Responsive Design**      | Layout and motion adapted to smaller screens     | Better browsing comfort      |
+| **Accessibility Baseline** | High Lighthouse accessibility scores             | Broader usability by default |
+| **Product Structure**      | UI, logic, and content remain organized          | Easier iteration and scaling |
 
 </div>
 
 ---
 
-### 🎨 What Makes This Different?
+### What Makes This Different?
 
 <table>
 <tr>
 <td width="50%">
 
-#### ❌ **Typical Projects**
+#### Typical Projects
 
-- Bloated frameworks
-- Slow load times (3-5s)
-- Generic templates
-- Fragmented architecture
-- Unmaintainable spaghetti code
+- generic visual language
+- presentation-first, structure-second
+- slow or uneven first load
+- disconnected content and layout
+- difficult to refine between iterations
 
 </td>
 <td width="50%">
 
-#### ✅ **This Project**
+#### This Project
 
-- **React 19** - minimal overhead
-- **< 0.8s load time** - extreme speed
-- **Custom design** - unique & purposeful
-- **API Thinking** - backend-ready structure
-- **Clean architecture** - scalable logic
+- **custom visual identity**
+- **measured speed, not only declared speed**
+- **content and structure designed together**
+- **fullstack-ready product thinking**
+- **cleaner iteration path for future changes**
 
 </td>
 </tr>
@@ -91,7 +94,7 @@ DominDynamics is not just another portfolio project. It is a **performance-first
 
 ### 4. Tech Stack
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <div align="center">
 
@@ -101,116 +104,93 @@ DominDynamics is not just another portfolio project. It is a **performance-first
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-### Build Tools
+### Build
 
 ![Vite 6](https://img.shields.io/badge/Vite_6-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![PostCSS](https://img.shields.io/badge/PostCSS-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white)
 
-### Optimization
+### Asset Workflow
 
 ![Sharp](https://img.shields.io/badge/Sharp-Image_Optimization-99CC00?style=for-the-badge)
-![Terser](https://img.shields.io/badge/Terser-Minification-8DD6F9?style=for-the-badge)
+![FFmpeg](https://img.shields.io/badge/FFmpeg-Video_Optimization-007808?style=for-the-badge)
 
 </div>
-
----
-
-### 📊 Stack Comparison
-
-| Category      | This Project          | Typical Alternative     | Why Better?                 |
-| ------------- | --------------------- | ----------------------- | --------------------------- |
-| **Framework** | React 19 (Optimized)  | React 18 + heavy deps   | 40% faster hydration        |
-| **Styling**   | Tailwind CSS          | Bootstrap / Material UI | 0 KB unused CSS, faster TTI |
-| **Images**    | WebP/AVIF (Automated) | PNG/JPG (Manual)        | 70% smaller assets          |
-| **Build**     | Vite 6                | Webpack                 | 10x faster HMR              |
 
 ### Why This Stack?
 
-> 💡 **Philosophy:** Every byte counts. Every millisecond matters.
-
-This project prioritizes **performance and simplicity** over trendy overhead:
-
-- **React 19** - Direct browser APIs, minimal abstraction, and modern concurrent features.
-- **Tailwind CSS** - Utility-first approach for rapid development without CSS bloat.
-- **Vite 6** - Instant server start and optimized build pipeline.
-- **Sharp & FFmpeg** - Automated asset optimization to ensure LCP stays under 0.8s.
+This stack supports a practical goal: build experiences that are visually refined, technically controlled, and easy to evolve. React 19, Tailwind CSS, Vite 6, and a simple asset pipeline create a setup that favors speed, clarity, and iteration discipline over unnecessary overhead.
 
 ### 5. Performance & Quality
 
-## ⚡ Performance & Quality
+## Performance & Quality
 
-### 🏆 Lighthouse Scores
+### PageSpeed Snapshot
 
 <div align="center">
 
-| Category          | Score          | Industry Avg | Improvement |
-| ----------------- | -------------- | ------------ | ----------- |
-| 🎯 Performance    | 🟢 **100/100** | 70           | +43%        |
-| ♿ Accessibility  | 🟢 **100/100** | 80           | +25%        |
-| 🔍 Best Practices | 🟢 **100/100** | 85           | +18%        |
-| 📱 SEO            | 🟢 **100/100** | 75           | +33%        |
+| Category           | Desktop | Mobile |
+| ------------------ | ------- | ------ |
+| **Performance**    | `99`    | `96`   |
+| **Accessibility**  | `95`    | `100`  |
+| **Best Practices** | `100`   | `100`  |
+| **SEO**            | `100`   | `100`  |
 
 </div>
 
 ---
 
-### ⚡ Core Web Vitals - Performance Breakdown
+### Measured Metrics
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────┐
-│  Metric  │  This Project  │  Target  │  Industry  │
-├──────────┼────────────────┼──────────┼────────────┤
-│   LCP    │   🟢 0.7s      │  < 2.5s  │  4.2s      │
-│   FID    │   🟢 10ms      │  < 100ms │  180ms     │
-│   CLS    │   🟢 0.01      │  < 0.1   │  0.25      │
-│   TTI    │   🟢 0.8s      │  < 3.8s  │  5.3s      │
-│   TBT    │   🟢 25ms      │  < 300ms │  420ms     │
-└─────────────────────────────────────────────────────┘
+```text
+┌──────────┬───────────────────┬───────────────────┐
+│ Metric   │ Desktop           │ Mobile            │
+├──────────┼───────────────────┼───────────────────┤
+│ FCP      │ 0.3s              │ 1.6s              │
+│ LCP      │ 0.5s              │ 1.8s              │
+│ TBT      │ 90ms              │ 30ms              │
+│ CLS      │ 0.017             │ 0.002             │
+│ SI       │ 0.9s              │ 4.6s              │
+└──────────┴───────────────────┴───────────────────┘
 ```
 
 </div>
 
-> 📊 **Result:** This project is **5.4x faster** than the industry average.
+> Source: PageSpeed Insights reports from `2026-04-23` for `https://domindev.github.io/DominDev-DominDynamics/`.
 
----
-
-### 🎯 Optimizations Applied
+### Applied Quality Layers
 
 <table>
 <tr>
 <td width="33%">
 
-#### 📦 Code
+#### Code
 
-- ✅ React 19 Concurrent Mode
-- ✅ Tree-shaking (Vite)
-- ✅ Code splitting
-- ✅ Minified with Terser
-- ✅ Critical CSS inline
-
-</td>
-<td width="33%">
-
-#### 🖼️ Assets
-
-- ✅ WebP/AVIF automated formats
-- ✅ Lazy-loaded images (Native)
-- ✅ Responsive images (Srcset)
-- ✅ Optimized SVGs
-- ✅ Font subsetting
+- React 19 application structure
+- section-based composition
+- centralized content layer
+- Vite production build
 
 </td>
 <td width="33%">
 
-#### 🚀 Delivery
+#### Assets
 
-- ✅ Gzip/Brotli compression
-- ✅ Modern ESM delivery
-- ✅ Preload critical assets
-- ✅ Minimal 3rd party scripts
-- ✅ Zero-block rendering
+- mirrored source-to-runtime asset pipeline
+- optimized runtime media flow
+- separated public and bundled assets
+- image and video tooling support
+
+</td>
+<td width="33%">
+
+#### Delivery
+
+- static-first output
+- modern ESM delivery
+- minimal external dependency load
+- strong Lighthouse technical baseline
 
 </td>
 </tr>
@@ -218,203 +198,135 @@ This project prioritizes **performance and simplicity** over trendy overhead:
 
 ### 6. Accessibility
 
-## ♿ Accessibility
+## Accessibility
 
-<div align="center">
+The project aims to feel premium without excluding users. Accessibility is treated as part of quality, not as an afterthought.
 
-### 🏆 WCAG 2.2 Level AA Compliant
+### Accessibility Signals
 
-| Standard           | Status | Details                                   |
-| ------------------ | ------ | ----------------------------------------- |
-| **Perceivable**    | ✅     | High contrast (4.5:1+), proper alt text   |
-| **Operable**       | ✅     | Full keyboard navigation, skip links      |
-| **Understandable** | ✅     | Clear hierarchy, predictable interactions |
-| **Robust**         | ✅     | Valid HTML5, ARIA landmarks               |
+- keyboard-focusable interactive controls
+- semantic landmarks and structured content flow
+- reduced-motion consideration for animated areas
+- strong Lighthouse accessibility scores on both desktop and mobile
 
-</div>
-
-### 🎯 Accessibility Features
-
-- 🎨 **Color Contrast** - All text meets or exceeds WCAG 4.5:1 ratio requirements.
-- ⌨️ **Keyboard Navigation** - Full site usable without a mouse; visible focus indicators.
-- 📱 **Screen Readers** - Proper ARIA labels and semantic HTML for assistive technology.
-- 🎬 **Reduced Motion** - Respects `prefers-reduced-motion` for all animations.
-- 🔤 **Text Scaling** - Layout remains functional at 200% zoom without loss of data.
-
-> ♿ **Commitment:** Building for **everyone**, not just the majority.
+> Commitment: a polished interface should still remain usable, readable, and controllable.
 
 ### 7. Getting Started
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
 ```bash
-# Required
-Node.js 20+        # Modern JavaScript runtime
-Modern Browser     # Chrome 110+, Firefox 110+, Safari 16+
-
-# Optional
-FFmpeg             # For video optimization scripts
+Node.js 20+
+Modern browser
+Optional: FFmpeg for media optimization scripts
 ```
 
-### 📥 Quick Start (3 steps)
+### Quick Start
 
 ```bash
-# 1️⃣ Clone the repository
 git clone https://github.com/DominDev/DominDev-DominDynamics.git
 cd DominDev-DominDynamics
-
-# 2️⃣ Install dependencies
 npm install
-
-# 3️⃣ Start development
 npm run dev
-
-# 🏗️ Build for production
-npm run build
 ```
 
----
+### Project Structure
 
-### 📁 Project Structure
-
-```
+```text
 DominDynamics/
-├── 📄 index.html              # Entry point
-├── 📁 src/
-│   ├── 📁 components/         # Atomic components (UI, Sections, Layout)
-│   ├── 📁 data/
-│   │   └── content.js         # CENTRALIZED site content (One source of truth)
-│   ├── 📁 assets/             # Runtime media used by the app
-│   └── 📁 hooks/              # Custom React hooks (Cursor, etc.)
-├── 📁 public/                 # Static assets & SEO files
-├── 📁 _scripts/               # Automated optimization pipeline
-│   ├── optimize-images.cjs     # Sharp-based image optimization
-│   └── optimize-video.cjs      # FFmpeg-based video optimization
-├── 📄 tailwind.config.js      # Style architecture
-└── 📄 vite.config.js          # Build & Dev optimization
+├── index.html              # Entry point and SEO shell
+├── src/
+│   ├── components/         # Sections, layout, effects, reusable UI
+│   ├── data/
+│   │   └── content.js      # Centralized content and section data
+│   ├── assets/             # Runtime media used by the app
+│   ├── hooks/              # Custom interaction hooks
+│   ├── App.jsx             # Main page composition
+│   ├── main.jsx            # App bootstrap
+│   └── index.css           # Global Tailwind layer and base effects
+├── public/                 # Static assets, icons, OG image, sitemap
+├── _assets-source/         # Git-ignored original media mirrored to repo paths
+├── _scripts/               # Asset and snapshot tooling
+│   ├── optimize-images.cjs # Sharp-based image optimization
+│   └── optimize-video.cjs  # FFmpeg-based video optimization
+├── tailwind.config.js      # Tailwind setup
+└── vite.config.js          # Vite build configuration
 ```
 
-> 💡 **Tip:** Edit `src/data/content.js` to change site text without touching a single JSX line.
+### Content Edit
 
-> Original media should live inside `_assets-source/` using the same relative paths as the final repo targets. The optimization scripts write production-ready assets into `src/assets/` and `public/`, and those optimized files are the versions meant to be committed.
+The project is structured to make fast iteration easier.
+
+- headlines, CTA labels, section copy, work cards, and contact data live in `src/data/content.js`
+- visual structure stays separated from business copy
+- messaging can evolve without dismantling the layout
+
+> Practical advantage: content can be refined quickly while preserving the visual system and component structure.
 
 ### 8. Lessons Learned
 
-## 📚 Lessons Learned
+## Lessons Learned
 
-> 💡 **Key insights from building DominDynamics**
+### What Worked Well
 
-### ✅ What Worked Well
+1. Centralized content made iteration faster and cleaner.
+2. Product thinking and visual direction could evolve without rewriting the whole structure.
+3. The motion layer helped the site feel alive without losing control of hierarchy.
 
-1. **Centralized Content Store** - Decoupling content from logic in `content.js` made updates 10x faster and reduced PR conflicts.
-2. **React 19 Optimizations** - Leveraging the new compiler and improved hooks drastically reduced re-renders in the interactive cursor.
-3. **Automated Media Pipeline** - Using Sharp and FFmpeg directly in the build process ensured media never slowed down the LCP.
+### Challenges Overcome
 
-### 🎯 Challenges Overcome
+1. Balancing premium motion with readability and mobile stability.
+2. Keeping expressive visuals aligned with technical performance goals.
 
-1. **Cross-browser mix-blend-mode** - Solution: Custom feature detection and fallback styles for the interactive cursor.
-2. **Framer Motion Performance** - Solution: Using `will-change` and hardware acceleration for complex exit animations.
+### 9. Roadmap
 
-### 🔄 What I'd Do Differently
-
-- Implement TypeScript from Day 1 for better type safety in the complex content store.
-- Use a headless CMS for content to allow non-technical updates.
-
-### 9. Deployment
-
-## 📦 Deployment
-
-### 🌐 Recommended Hosting
+## Roadmap
 
 <div align="center">
 
-| Platform         | Best For              | Deploy Time | Status      |
-| ---------------- | --------------------- | ----------- | ----------- |
-| **Vercel**       | React / Vite projects | < 1 min     | ✅ Verified |
-| **Netlify**      | Static sites, CI/CD   | < 1 min     | ✅ Verified |
-| **GitHub Pages** | Open source hosting   | < 5 min     | ✅ Verified |
+| Priority | Feature                           | Status  |
+| -------- | --------------------------------- | ------- |
+| High     | Additional case study depth       | Planned |
+| High     | Expanded content variants         | Planned |
+| Medium   | Further asset optimization passes | Planned |
+| Medium   | Additional showcase material      | Planned |
 
 </div>
 
-### 🚀 Deploy to Vercel (Recommended)
+### 10. License
 
-```bash
-# Simply connect your GitHub repository to Vercel
-# Build command: npm run build
-# Output directory: dist
-```
+## License
 
-> 🌐 **Custom Domain:** Update DNS settings to point CNAME to `cname.vercel-dns.com`.
-
-### 10. Roadmap
-
-## 🗺️ Roadmap
-
-### 🎯 Planned Features
+This repository uses a dual licensing model:
 
 <div align="center">
 
-| Priority  | Feature                | Status         | Timeline |
-| --------- | ---------------------- | -------------- | -------- |
-| 🔴 High   | Dark mode toggle       | 📋 Planned     | Q1 2026  |
-| 🔴 High   | i18n (EN / PL support) | 📋 Planned     | Q1 2026  |
-| 🟡 Medium | Blog section (MDX)     | 💭 Considering | Q2 2026  |
-| 🟡 Medium | Interactive 3D Hero    | 💭 Considering | Q2 2026  |
+| Type                    | What's Covered         | Terms                           |
+| ----------------------- | ---------------------- | ------------------------------- |
+| **MIT License**         | Source code            | Free to use, modify, distribute |
+| **All Rights Reserved** | Assets, branding, copy | Explicit permission required    |
 
 </div>
 
-### ✅ Recently Completed
-
-- [x] Initial release with Core Web Vitals focus
-- [x] Automated image optimization pipeline
-- [x] WCAG 2.2 AA Compliance audit
-- [x] React 19 Migration
-
-### 11. License
-
-## 📄 License
-
-This repository uses a **dual licensing model**:
-
-<div align="center">
-
-| Type                       | What's Covered            | Terms                           |
-| -------------------------- | ------------------------- | ------------------------------- |
-| ✅ **MIT License**         | Source code               | Free to use, modify, distribute |
-| ❌ **All Rights Reserved** | Assets, branding, copy    | Explicit permission required    |
-
-</div>
-
-For ecosystem compatibility, `package.json` declares `MIT`, because the published package metadata can expose only one primary license value.
+For ecosystem compatibility, `package.json` declares `MIT`, because published package metadata can expose only one primary license value.
 
 The repository-level legal source of truth remains [LICENSE](LICENSE), which defines:
 
 - code under MIT
 - assets, branding, and written content as All Rights Reserved
 
-### 12. Author
+### 11. Author
 
-## 👨‍💻 Author
+## Author
 
-<div align="center">
+**DominDev / DominDynamics**
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=FF1F1F&center=true&vCenter=true&width=600&lines=Crafted+with+%E2%9D%A4%EF%B8%8F+by+DominDev;Building+Digital+Experiences;That+Convert." alt="Typing SVG" />
-
----
-
-### **Building digital experiences that convert.**
-
-[![Website](https://img.shields.io/badge/🌐_Website-domindev.com-FF1F1F?style=for-the-badge)](https://domindev.com)
-[![Email](https://img.shields.io/badge/✉️_Email-contakt@domindev.com-EA4335?style=for-the-badge)](mailto:contakt@domindev.com)
-[![GitHub](https://img.shields.io/badge/⭐_GitHub-DominDev-181717?style=for-the-badge)](https://github.com/DominDev)
+Building digital experiences that convert through structure, clarity, and execution quality.
 
 ---
 
-### ⭐ **If you like this project, give it a star on GitHub!**
+If the direction behind this project matches the kind of digital product you want to build, the live version is here:
 
-<sub>Made with ❤️ and ☕ by DominDev</sub>
-
-</div>
-
+**[View Live Demo](https://domindynamics.com)**
