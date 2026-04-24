@@ -215,6 +215,8 @@ The project aims to feel premium without excluding users. Accessibility is treat
 
 ## Getting Started
 
+Project documentation for technical and non-technical readers lives in [`docs/`](docs/README.md).
+
 ### Prerequisites
 
 ```bash
