@@ -95,6 +95,7 @@ venv/
 
 # === Project Internal Docs (technical notes, not for production) ===
 _docs/
+_archive/
 
 # === AI Assistant Configuration ===
 .claude/

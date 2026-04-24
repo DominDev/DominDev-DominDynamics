@@ -4,4 +4,6 @@ _docs/
 _archive/
 README-assets/
 _assets-source/
+playwright-report/
+test-results/
 package-lock.json
