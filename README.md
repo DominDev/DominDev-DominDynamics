@@ -238,12 +238,14 @@ npm run dev
 npm run format:check
 npm run lint
 npm run test:smoke
+npm run test:e2e
 npm run check
 ```
 
 - `format:check` verifies code style consistency with Prettier
 - `lint` checks code quality, hooks, a11y basics, and unused imports
 - `test:smoke` verifies that the main app tree renders
+- `test:e2e` runs minimal browser smoke tests against a production-like preview build
 - `check` runs format, lint, smoke test, and production build before shipping changes
 
 ### Project Structure
@@ -254,6 +256,7 @@ DominDynamics/
 ├── .prettierignore          # Paths excluded from formatting
 ├── eslint.config.js         # ESLint quality rules
 ├── index.html              # Entry point and SEO shell
+├── e2e/                    # Minimal Playwright browser smoke tests
 ├── src/
 │   ├── components/         # Sections, layout, effects, reusable UI
 │   ├── data/
@@ -271,6 +274,7 @@ DominDynamics/
 ├── _scripts/               # Asset and snapshot tooling
 │   ├── optimize-images.cjs # Sharp-based image optimization
 │   └── optimize-video.cjs  # FFmpeg-based video optimization
+├── playwright.config.js    # Playwright E2E smoke configuration
 ├── tailwind.config.js      # Tailwind setup
 ├── vite.config.js          # Vite build configuration
 └── vitest.config.js        # Vitest smoke test configuration

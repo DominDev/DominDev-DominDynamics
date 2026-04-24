@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "preview:e2e": "vite preview --host 127.0.0.1 --port 4174",
     "lint": "eslint .",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
     "test:smoke": "vitest run src/test/app.smoke.test.jsx",
+    "test:e2e": "playwright test",
     "check": "npm run format:check && npm run lint && npm run test:smoke && npm run build",
     "optimize:images": "node _scripts/optimize-images.cjs",
     "optimize:video": "node _scripts/optimize-video.cjs"
@@ -25,6 +27,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
+    "@playwright/test": "^1.59.1",
     "@testing-library/react": "^16.3.2",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
