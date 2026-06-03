@@ -142,3 +142,6 @@ dist-ssr/
 
 # === Media tooling ===
 ffmpeg2pass-*.log
+
+# Local Obsidian AI memory junction
+.obsidian-memory/
